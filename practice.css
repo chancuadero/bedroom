@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-seriff;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+body{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/bedroom.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    height: 100vh;  
+}
+
+.navbar h1{
+    font-size: 70px;
+}
+.navbar {
+    width: 95%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+ .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+   position: relative;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+  
+}
+
+.navbar ul li:hover .submenu{
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.navbar ul li:hover .submenu ul{
+    display: block;
+    position: absolute;
+}
+.navbar ul li:hover .submenu li{
+    padding: 2px;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 1px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+#dreamlove{
+   display: flex;
+   justify-content: center;
+   color: black;
+}
+
+.wall{
+    background-image: url(images/wall.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    margin: 20px;
+    border-radius: 10px;
+    background-blend-mode: screen;
+}
+
+.fearlimits{
+
+    text-align: center;
+    font-size: 18px;
+    margin: 100px;
+    padding: 45px;
+    background-color: rgba(4, 5, 5, 0.856);
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+
+#contact h1{
+    text-align: left;
+    margin: 50px 0 -70px 160px;
+}
+
+#room{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: justify;
+    font-size: 18px;
+    margin: 100px 150px 0 150px;
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+    height: 100vh;
+}
+
+.room1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: justify;
+    font-size: 18px;
+    margin: 100px 150px 0 150px;
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.formp{
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.90);
+    border-color: #E3BC9A;
+}
+
+span{
+    font-size: 30px;
+}
+#room img{
+    width: 400px;
+    height: 500px;
+    border-radius: 60px;
+}   
+form{
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.fa{
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 30px;
+    text-decoration: none;
+    border-radius: 20%;
+    text-align: center;
+}
+
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+}
+
+#fname{
+    border-radius: 6px;
+    background-color:rgba(255,255,255,0.60);
+}
+#submit{
+    background:rgba(255,255,255,0.60);
+    padding: .8rem 2rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    color: black;
+}
+
+#myDesign{
+    margin-top: 40px;
+    text-align: center;
+    height: 100vh;
+}
+
+.designImage{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px;
+    margin-top: -20px;
+}
+.designImage img{
+    border: 1px solid #E3BC9A;
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgba(199, 175, 175, 0.3);
+    border-radius: 10%;
+    cursor: pointer;
+}
+#btnScrollToTop:active{
+    background-color: rgba(3, 97, 89, 0.993);
+}
